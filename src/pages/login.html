@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/src/assets/img/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Login</title>
     <link rel="stylesheet" href="/src/css/app.css">
 </head>
@@ -14,16 +17,16 @@
             <div class="form-control">
                 <div class="campo">
                     <input type="text" name="usuario" id="" placeholder="Nombre de usuario">
-                    <img src="" alt="" srcset="">
+                    <img src="/src/assets/img/user.svg" alt="Logo de usuario">
                 </div>
                 <div class="campo">
                     <input type="password" name="contrasenia" id="" placeholder="Contrasenia">
-                    <img src="" alt="" srcset="">
+                    <img src="/src/assets/img/key.svg" alt="Logo de llave">
                 </div>
             </div>
-            <div>
-                <button type="submit">Iniciar sesión</button>
-                <p>¿Aún no tienes cuenta?<a href="http://">Crear cuenta</a></p>
+            <div class="enviar-form-container">
+                <button type="submit" class="btn-form border-rad">Iniciar sesión</button>
+                <p>¿Aún no tienes cuenta?<a href="./singin.html"> Crear cuenta</a></p>
             </div>
 
             <div class="redes-sociales">
@@ -33,9 +36,9 @@
                     <div class="line flex-grow"></div>
                 </div>
 
-                <div class="flex">
-                    <img src="" alt="Google" srcset="">
-                    <img src="" alt="Facebook" srcset="">
+                <div class="flex f-jc-center">
+                    <a href="#"><img src="/src/assets/img/rrss/icon/google.svg" alt="Google"></a>
+                    <a href="#"><img src="/src/assets/img/rrss/icon/facebook.svg" alt="Facebook"></a>
                 </div>
             </div>
 
