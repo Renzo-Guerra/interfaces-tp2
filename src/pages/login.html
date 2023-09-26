@@ -4,23 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="/src/css/app.css">
 </head>
 <body>
-    <div class="container">
-        <h3>Inicio de sesión</h3>
-        <form action="" method="post">
+    <div class="container-form">
+        <form action="" method="post" class="border-rad">
+            <h3 class="titular">Inicio de sesión</h3>
             <div class="form-control">
-                <input type="text" name="usuario" id="">
-                <input type="password" name="contrasenia" id="">
+                <div class="campo">
+                    <input type="text" name="usuario" id="" placeholder="Nombre de usuario">
+                    <img src="" alt="" srcset="">
+                </div>
+                <div class="campo">
+                    <input type="password" name="contrasenia" id="" placeholder="Contrasenia">
+                    <img src="" alt="" srcset="">
+                </div>
+            </div>
+            <div>
                 <button type="submit">Iniciar sesión</button>
                 <p>¿Aún no tienes cuenta?<a href="http://">Crear cuenta</a></p>
             </div>
 
             <div class="redes-sociales">
-                <div>
-                    <p>Ingresa con</p>
+                <div class="lines-container">
+                    <div class="line flex-grow"></div>
+                    <span>Ingresar con</span>
+                    <div class="line flex-grow"></div>
                 </div>
-                <div>
+
+                <div class="flex">
                     <img src="" alt="Google" srcset="">
                     <img src="" alt="Facebook" srcset="">
                 </div>
