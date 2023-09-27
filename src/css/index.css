@@ -22,13 +22,10 @@ body{
 
 /*body {
     background-color: #0C0D14;
-    justify-content: center;
-    width: 990px;
-
 }
 
 
-.encabezado {
+/* .encabezado {
 
     width: 100%;
     height: 120px;
@@ -39,8 +36,8 @@ body{
 
 
 }
-
-.menu_hamurgresa {
+*/
+/* .menu_hamurgresa {
     width: 30px;
     background-color: #9BCEDD;
     margin: 30px;
@@ -55,8 +52,8 @@ body{
     background-color: #9BCEDD;
     margin: 40px;
     cursor: pointer
-}
-
+} */
+/*
 .barra_busqueda {
     display: flex;
     align-items: center;
@@ -115,9 +112,15 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 100px;
+} */
+
+/* Las imagenes de blizzard, riot games, etc */
+footer img{
+    width: 100px;
+    height: 100px;
 }
 
-.categorias {
+/* .categorias {
     color: #9BCEDD;
     margin-left: 130px;
     margin-top: 75px;
@@ -207,13 +210,21 @@ body{
     transition: transform 0.5s ease-in-out;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.grilla {
+    display: grid;
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
-button {
-    margin-top: 10px;
+
+.card img{
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card {
@@ -224,4 +235,24 @@ button {
 .populares {
     display: flex;
     flex-direction: column;
+}
+
+/* FOOTER */
+
+.footer-mobile {
+    display: block;
+}
+
+.footer-mobile .pagos-mobile  {
+    display: block;
+}
+
+.pagos-mobile img {
+    width: auto;
+}
+
+.footer-mobile .column-left {
+    float: left;
+    padding-left: 5%;
+    width: 50%;
 }
