@@ -1,12 +1,9 @@
 body {
     background-color: #0C0D14;
-    justify-content: center;
-    width: 990px;
-
 }
 
 
-.encabezado {
+/* .encabezado {
 
     width: 100%;
     height: 120px;
@@ -17,8 +14,8 @@ body {
 
 
 }
-
-.menu_hamurgresa {
+*/
+/* .menu_hamurgresa {
     width: 30px;
     background-color: #9BCEDD;
     margin: 30px;
@@ -33,8 +30,8 @@ body {
     background-color: #9BCEDD;
     margin: 40px;
     cursor: pointer
-}
-
+} */
+/*
 .barra_busqueda {
     display: flex;
     align-items: center;
@@ -93,9 +90,15 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 100px;
+} */
+
+/* Las imagenes de blizzard, riot games, etc */
+footer img{
+    width: 100px;
+    height: 100px;
 }
 
-.categorias {
+/* .categorias {
     color: #9BCEDD;
     margin-left: 130px;
     margin-top: 75px;
@@ -103,73 +106,7 @@ body {
     width: fit-content;
     height: fit-content;
     font-size: 25px;
-}
-
-.populares {
-    margin-left: 130px;
-    width: 80%;
-    height: 1005px;
-    background-color: #0C0D14;
-    color: #9BCEDD;
-    margin-top: 25px;
-
-    font-size: 24px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Crea 3 columnas iguales */
-    gap: 5px;
-    /* Espacio entre las cards */
-
-}
-
-/*estilos para la card populares*/
-.card {
-    width: 212px;
-    height: 294px;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 0 px;
-    background-color: #202126;
-    color: #F3F3E6;
-
-}
-
-.card img {
-    width: 212px;
-    ;
-    height: 175px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    opacity: 0.5;
-}
-
-
-.card p.nombre_juego {
-    font-size: 15px;
-    margin-top: 8px;
-    margin-left: 8px;
-}
-
-.card p {
-    font-size: 24px;
-    margin-top: 16px;
-    margin-left: 8px;
-}
-
-.card .Agregar {
-    margin-left: 90px;
-    margin-bottom: 100px;
-    width: fit-content;
-    cursor: pointer;
-    color: #F3F3E6;
-    border: none;
-    background-color: #202126;
-}
-
-.grilla {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 .carousel-container {
     display: flex;
@@ -184,13 +121,21 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.grilla {
+    display: grid;
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
 }
 
-button {
-    margin-top: 10px;
+
+.card img{
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card {
