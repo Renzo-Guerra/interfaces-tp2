@@ -202,3 +202,23 @@ button {
     display: flex;
     flex-direction: column;
 }
+
+/* FOOTER */
+
+.footer-mobile {
+    display: block;
+}
+
+.footer-mobile .pagos-mobile  {
+    display: block;
+}
+
+.pagos-mobile img {
+    width: auto;
+}
+
+.footer-mobile .column-left {
+    float: left;
+    padding-left: 5%;
+    width: 50%;
+}
