@@ -1,4 +1,3 @@
-console.log('carga js');
 
 const carouselContainer = document.querySelector(".carousel-container");
 const slides = document.querySelectorAll(".carousel-slide");
