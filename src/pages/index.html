@@ -11,16 +11,20 @@
 </head>
 
 <body>
-    <header class="encabezado">
-        <div class="menu_hamurgresa"><img src="/src/assets/img/hamburguer.svg"> </div>
-        <div class="logo"><img src="/src/assets/img/logo150-100.svg"></div>
-        <p class="nombre">Logomania</p>
-        <div class="barra_busqueda">
-            <input type="text" class="busqueda_input" placeholder="Buscar juego">
-            <button class="lupa_button"><img src="/src/assets/img/lupa.svg"></button>
+    <header class="header-encabezado">
+        <div class="header-menu-marca">
+            <div class="header-menu-hamurgresa"><img src="/src/assets/img/hamburguer.svg">
+            </div>
+            <p class="header-nombre">JuegoMania</p>
         </div>
-        <button class="carrito_button"><img src="/src/assets/img/carrito.png">Carrito</button>
-        <button class="login"><img src="/src/assets/img/user.svg"></button>
+        <div class="header-barra-busqueda">
+            <input type="text" class="header-busqueda-input" placeholder="Buscar juego...">
+        </div>
+        <div class="header-barra-botones">
+            <button class="header-lupa-button"><img src="/src/assets/img/buscador.svg"></button>
+            <button class="header-carrito-button"><img src="/src/assets/img/carrito2.svg"></button>
+            <button class="header-login"><img src="/src/assets/img/perfil.svg"></button>
+        </div>
     </header>
     <div class="container">
         <section class="populares">
@@ -84,27 +88,16 @@
                     <button class="Agregar"> Agregar al carrito</button>
                 </div>
             </main>
-        </section>
-        <!-- <div class="carousel-container">
-            <p class="categorias">Recomendados para ti</p>
-            <button id="prevBtn"><img src="/src/assets/img/flecha_btn.svg" alt="Atrás" srcset=""></button>
-            <button id="nextBtn"><img src="/src/assets/img/flecha_btn.svg" alt="Siguiente" srcset=""></button>
-            <div class="carousel-slide">
-                <img src="/src/assets/img/carrito.jpg" alt="Imagen 1">
-            </div>
-            <div class="carousel-slide">
-                <img src="/src/assets/img/descarga.png" alt="Imagen 2">
-            </div>
-            <div class="carousel-slide">
-                <img src="/src/assets/img/hambureguesa.png" alt="Imagen 3">
-            </div>
-        </div> -->
-        
+        </section>  
     </div>
 
     <footer class="footer-mobile">
         <div class="pagos-mobile">
-            <p class="titulo">Nuestras formas de pago</p>
+            <div class="lines-container">
+                <div class="line flex-grow"></div>
+                <p class="titulo">Nuestras formas de pago</p>
+                <div class="line flex-grow"></div>
+            </div>
             <div class="tarjetas">
                 <img src="/src/assets/img/visa.svg" alt="Visa" srcset="">
                 <img src="/src/assets/img/paypal.svg" alt="Paypal" srcset="">

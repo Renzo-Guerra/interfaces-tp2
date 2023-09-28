@@ -25,7 +25,8 @@ footer {
 
 .pagos-mobile .tarjetas, .redes-sociales .redes {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    max-width: 400px;
 }
 
 .pagos-mobile .tarjetas img,
@@ -63,4 +64,64 @@ footer {
 .carousel-slide {
     flex: 1;
     transition: 1s ease;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .pagos-mobile {
+        padding-bottom: 25px;
+    }
+
+    .pagos-mobile .tarjetas,
+    .redes-sociales .redes {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+    .pagos-mobile .tarjetas {
+        gap: 80px;
+    }
+
+    .pagos-mobile .tarjetas img {
+        width: 100px;
+    }
+    .servicios-mobile {
+        display: grid;
+        grid-template-columns: repeat(4, 170px);
+    }
+
+    .validacion{
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .pagos-mobile {
+        padding-bottom: 25px;
+    }
+
+    .pagos-mobile .tarjetas,
+    .redes-sociales .redes {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
+    .pagos-mobile .tarjetas {
+        gap: 80px;
+    }
+
+    .pagos-mobile .tarjetas img {
+        width: 100px;
+    }
+
+    .servicios-mobile {
+        display: grid;
+        grid-template-columns: repeat(4, 170px);
+    }
+
+    .validacion {
+        grid-column: 1 / -1;
+    }
 }
