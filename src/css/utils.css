@@ -102,11 +102,11 @@
   color: var(--color-primario-100);
 }
 
-.redes-sociales{
+.registro-redes-sociales{
   display: grid;
 }
 
-.redes-sociales img{
+.registro-redes-sociales img{
   object-fit: cover;
 }
 
