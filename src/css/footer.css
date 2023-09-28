@@ -1,0 +1,61 @@
+/* FOOTER */
+footer {
+    background-color: var(--color-primario-700);
+}
+
+.footer-mobile p.titulo {
+    font-size: var(--fs-subtitulo);
+}
+
+.footer-mobile p {
+    font-size: var(--fs-texto);
+}
+
+.footer-mobile {
+    display: block;
+}
+
+.pagos-mobile, .servicios-mobile {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagos-mobile .tarjetas, .redes-sociales .redes {
+    display: flex;
+    gap: 40px;
+}
+
+.pagos-mobile .tarjetas img,
+.redes-sociales .redes img {
+    width: 50px;
+}
+
+.footer-mobile .column-left {
+    float: left;
+    padding-left: 30%;
+    width: 50%;
+}
+
+.servicios-mobile {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.redes {
+    padding-bottom: 20px;
+}
+
+.validacion {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    row-gap: 15px;
+    column-gap: 50px;
+    padding-bottom: 25px;
+}
+
+.footer-mobile div,
+.servicios-mobile div {
+    gap: 15px;
+}

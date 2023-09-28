@@ -4,6 +4,7 @@ body{
     background-color: #0C0D14;
     width: 100%;
     justify-content: center;
+    color: var(--color-primario-100);
 }
 
 .logo{
@@ -117,7 +118,7 @@ body{
 /* Las imagenes de blizzard, riot games, etc */
 footer img{
     width: 100px;
-    height: 100px;
+    /* height: 100px; */
 }
 
 /* .categorias {
@@ -235,41 +236,4 @@ footer img{
 .populares {
     display: flex;
     flex-direction: column;
-}
-
-/* FOOTER */
-
-.footer-mobile {
-    display: block;
-}
-
-.pagos-mobile {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-}
-
-.pagos-mobile div {
-    display: flex;
-    gap: 40px;
-} 
-
-.pagos-mobile img {
-    width: 50px;
-}
-
-.footer-mobile .column-left {
-    float: left;
-    padding-left: 30%;
-    width: 50%;
-}
-
-.servicios-mobile {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-}
-
-.servicios-mobile div img {
-    width: 50px;
 }
