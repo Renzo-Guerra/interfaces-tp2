@@ -154,16 +154,33 @@ footer img{
     display: block;
 }
 
-.footer-mobile .pagos-mobile  {
-    display: block;
+.pagos-mobile {
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
+.pagos-mobile div {
+    display: flex;
+    gap: 40px;
+} 
+
 .pagos-mobile img {
-    width: auto;
+    width: 50px;
 }
 
 .footer-mobile .column-left {
     float: left;
-    padding-left: 5%;
+    padding-left: 30%;
     width: 50%;
+}
+
+.servicios-mobile {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicios-mobile div img {
+    width: 50px;
 }
