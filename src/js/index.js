@@ -1,30 +1,22 @@
-console.log('carga js');
+document.addEventListener("DOMContentLoaded", function () {
+	const slides = document.querySelectorAll(".carousel-slide");
 
-const carouselContainer = document.querySelector(".carousel-container");
-const slides = document.querySelectorAll(".carousel-slide");
-const prevButton = document.getElementById("prevBtn");
-const nextButton = document.getElementById("nextBtn");
-let currentIndex = 0;
+	let currentIndex = 0;
 
-function updateCarousel() {
-	const offset = -currentIndex * 100;
-	carouselContainer.style.transform = `translateX(${offset}%)`;
-}
-
-prevButton.addEventListener("click", () => {
-    console.log('anterior');
-	if (currentIndex > 0) {
-		currentIndex--;
-		updateCarousel();
+	function showSlide(index) {
+		slides.forEach((slide, i) => {
+			slide.style.transform = `translateX(${100 * (i - index)}%)`;
+		});
 	}
-});
 
-nextButton.addEventListener("click", () => {
-    console.log("siguiente");
-	if (currentIndex < slides.length - 1) {
-		currentIndex++;
-		updateCarousel();
+	function nextSlide() {
+		currentIndex = (currentIndex + 1) % slides.length;
+		showSlide(currentIndex);
 	}
-});
 
-updateCarousel();
+	// Configura un temporizador para avanzar automáticamente cada 3 segundos (3000 ms)
+	setInterval(nextSlide, 3000);
+
+	// Muestra el primer slide
+	showSlide(currentIndex);
+});
