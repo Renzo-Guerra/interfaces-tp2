@@ -15,7 +15,9 @@ footer {
     display: block;
 }
 
-.pagos-mobile, .servicios-mobile {
+.pagos-mobile, 
+.servicios-mobile, 
+.redes-sociales {
     display: grid;
     justify-content: center;
     text-align: center;
@@ -47,15 +49,18 @@ footer {
     padding-bottom: 20px;
 }
 
-.validacion {
-    display: grid;
-    grid-template-columns: repeat(2, 100px);
-    row-gap: 15px;
-    column-gap: 50px;
-    padding-bottom: 25px;
-}
-
 .footer-mobile div,
 .servicios-mobile div {
     gap: 15px;
+}
+
+.validacion {
+    display: flex;
+    overflow: hidden;
+    padding:10px 50px 10px 50px;
+}
+
+.carousel-slide {
+    flex: 1;
+    transition: 1s ease;
 }
