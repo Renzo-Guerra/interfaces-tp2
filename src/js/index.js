@@ -1,11 +1,3 @@
-let buscador = document.querySelector(".header-barra-busqueda");
-let btnLupa = document.querySelector("#header-lupa-button");
-
-btnLupa.addEventListener("click", function () {
-	buscador.classList.toggle("header-barra-busqueda-hidden");
-	buscador.style.position = "absolute";
-	buscador.style.zIndex = 1;
-})
 
 document.addEventListener("DOMContentLoaded", function () {
 	const slides = document.querySelectorAll(".carousel-slide");

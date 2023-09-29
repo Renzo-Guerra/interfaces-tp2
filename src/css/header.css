@@ -46,28 +46,10 @@ header .icono{
     position: absolute;
     top: 0;
     display: flex;
-<<<<<<< HEAD
-    align-items: center;
-    background-color: var(--color-primario-800);
-}
-
-.header-barra-busqueda-hidden {
-    display: none;
-}
-.header-busqueda-input {
-    color: var(--color-primario-100);
-    background-color: var(--color-primario-600);
-    /* margin: 0 auto; */
-    border-radius: 20px;
-}
-.header-busqueda-input::placeholder {
-    /* padding-left: 10px; */
-=======
     flex-direction: column;
     gap: .5rem;
     padding: 1rem 1rem 1rem 2rem;
     background-color: var(--color-primario-900);
->>>>>>> df9c9296ffe4d178809320c92213a22918e535a2
     color: var(--color-primario-100);
 }
 
