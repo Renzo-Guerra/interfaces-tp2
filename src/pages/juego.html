@@ -11,23 +11,35 @@
     <header>
         <div class="header-encabezado max-width">
             <div>
-                <button><img src="/src/assets/img/header/hamburguer.svg" class="icono"></button>
+                <button><img src="/src/assets/img/header/hamburguer.svg" class="icono" id="header-hamburguesa-button"></button>
                 <img src="/src/assets/img/header/juegomania.svg" alt="Icono de Logomania">
             </div>
             <div class="header-barra-busqueda hidden">
                 <input type="text" class="header-busqueda-input" placeholder="Buscar juego...">
             </div>
             <div class="header-barra-botones">
-                <button class="icono"><img src="/src/assets/img/header/buscador.svg"></button>
-                <button class="icono"><img src="/src/assets/img/header/icono_me_gusta.svg"></button>
-                <button class="icono"><img src="/src/assets/img/header/perfil.svg"></button>
+                <button class="icono" id="header-lupa-button"><img src="/src/assets/img/header/buscador.svg"></button>
+                <button class="icono"><img src="/src/assets/img/header/carrito.svg"></button>
+                <button class="icono" id="header-user-button"><img id="avatar-user" src="/src/assets/img/header/perfil.svg"></button>
             </div>
             <div id="desplegable-categorias" class="hidden">
-                <div class="header__categorias">
+                <div class="header-categorias">
                     <p><img src="/src/assets/img/header/desplegable_izquierdo/accion.svg" alt="Icono de los juegos de accion">Acción</p>
                     <p><img src="/src/assets/img/header/desplegable_izquierdo/terror.svg" alt="Icono de los juegos de terror">Terror</p>
                     <p><img src="/src/assets/img/header/desplegable_izquierdo/vestir.svg" alt="Icono de los juegos de vestir">Vestir</p>
                     <p><img src="/src/assets/img/header/desplegable_izquierdo/estrategia.svg" alt="Icono de los juegos de estrategia">Estrategia</p>
+                </div>
+            </div>
+            <div id="header-menu-user" class="hidden">
+                <div id="sin-logear" class="header-menu-usuario">
+                    <a href="login.html" id="btn-login"><img src="/src/assets/img/header/desplegable_derecho/key.svg" alt="Icono para iniciar sesión">Iniciar Sesión</a>
+                    <a href="#"><img src="/src/assets/img/header/desplegable_derecho/salir.svg" alt="Icono para salir">Salir</a>
+                </div>
+                <div id="logeado" class="header-menu-usuario hidden">
+                    <a href="login.html" id="btn-login"><img src="/src/assets/img/header/desplegable_derecho/perfil.svg"
+                            alt="Icono para iniciar sesión">Mi perfil</a>
+                    <a href="#"><img src="/src/assets/img/header/desplegable_derecho/book.svg" alt="Icono para salir">Biblioteca</a>
+                    <button type="button" id="cerrarSesionUser"><img src="/src/assets/img/header/desplegable_derecho/cerrar-sesion2.svg" alt="Icono para salir">Cerrar sesión</button>
                 </div>
             </div>
         </div>
@@ -111,5 +123,6 @@
             </div>
         </div>
     </section>
+    <script src="/src/js/header.js"></script>
 </body>
 </html>
