@@ -39,11 +39,19 @@ p.header-nombre {
     display: flex;
     align-items: center;
     background-color: var(--color-primario-800);
-    display: none;
 }
 
+.header-barra-busqueda-hidden {
+    display: none;
+}
+.header-busqueda-input {
+    color: var(--color-primario-100);
+    background-color: var(--color-primario-600);
+    /* margin: 0 auto; */
+    border-radius: 20px;
+}
 .header-busqueda-input::placeholder {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     color: var(--color-primario-100);
     background-color: var(--color-primario-600);
     margin: 0 auto;
