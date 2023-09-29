@@ -16,16 +16,16 @@
             <h3 class="titular">Inicio de sesión</h3>
             <div class="form-control">
                 <div class="campo">
-                    <input type="text" name="usuario" id="" placeholder="Nombre de usuario">
-                    <img src="/src/assets/img/user.svg" alt="Logo de usuario">
+                    <input type="text" name="usuario" id="login-usuario" placeholder="Nombre de usuario">
+                    <img src="/src/assets/img/form/user.svg" alt="Logo de usuario">
                 </div>
                 <div class="campo">
-                    <input type="password" name="contrasenia" id="" placeholder="Contrasenia">
-                    <img src="/src/assets/img/key.svg" alt="Logo de llave">
+                    <input type="password" name="contrasenia" id="login-contrasenia" placeholder="Contrasenia">
+                    <img src="/src/assets/img/form/key.svg" alt="Logo de llave">
                 </div>
             </div>
             <div class="enviar-form-container">
-                <button type="submit" class="btn-form border-rad">Iniciar sesión</button>
+                <a href="index.html"><button type="button" class="btn-form border-rad" id="btn-loginForm">Iniciar sesión</button></a>
                 <p>¿Aún no tienes cuenta?<a href="./singin.html"> Crear cuenta</a></p>
             </div>
 
@@ -37,12 +37,13 @@
                 </div>
 
                 <div class="flex f-jc-center">
-                    <a href="#"><img src="/src/assets/img/rrss/icon/google.svg" alt="Google"></a>
-                    <a href="#"><img src="/src/assets/img/rrss/icon/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="/src/assets/img/rrss/google.svg" alt="Google"></a>
+                    <a href="#"><img src="/src/assets/img/rrss/facebook.svg" alt="Facebook"></a>
                 </div>
             </div>
 
         </form>
     </div>
+    <script src="/src/js/login.js"></script>
 </body>
 </html>

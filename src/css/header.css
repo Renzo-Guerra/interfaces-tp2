@@ -42,7 +42,17 @@ header .icono{
     background-color: rgba(0, 0, 0, .4);
 }
 
-.header__categorias{
+#header-menu-user {
+    position: fixed;
+    top: 104px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 104px);
+    background-color: rgba(0, 0, 0, .4);   
+}
+
+.header-categorias,
+.header-menu-usuario {
     position: absolute;
     top: 0;
     display: flex;
@@ -51,16 +61,23 @@ header .icono{
     padding: 1rem 1rem 1rem 2rem;
     background-color: var(--color-primario-900);
     color: var(--color-primario-100);
+    border-radius: 20px;
 }
 
-.header__categorias p{
+.header-menu-usuario {
+    right: 0;
+}
+
+.header-categorias p,
+.header-menu-usuario a{
     padding: .5rem;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-.header__categorias img{
+.header-categorias img,
+.header-menu-usuario img {
     width: 30px;
 }
 

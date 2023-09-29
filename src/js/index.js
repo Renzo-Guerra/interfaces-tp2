@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
 	const slides = document.querySelectorAll(".carousel-slide");
 
@@ -20,3 +21,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Muestra el primer slide
 	showSlide(currentIndex);
 });
+
