@@ -22,7 +22,7 @@
   align-items: center;
   grid-template-columns: repeat(auto-fit, 300px);
   gap: 1rem;
-  padding-inline: 1rem;
+  padding-inline: 1rem;/*1rem =16px*/
   max-width: 1000px;
 }
 
@@ -38,7 +38,7 @@
   height: 10rem;
   object-fit: cover;
 }
-.card div{
+.card>div{
   display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -66,4 +66,38 @@
 .card .precio{
   font-size: var(--fs-subtitulo);
   font-weight: bold;
+  margin-left: 5px;
+  
+}
+
+.card .precio_neto{
+  text-decoration: line-through;
+  color:var(--color-primario-500);
+  font-family: var(--ff);
+  font-size:var(--fs-precio-tachado);
+  font-weight: bold;
+  margin-left: 5px;
+
+}
+
+.card .descuento{
+  background-color:var(--color-secundario-500);
+  width: 36px;  
+  height: 25px;  
+  font-weight: bold;
+  font-size: var(--fs-texto);
+  padding-top: 4px;
+  text-align:center;
+  margin-left: 5px;
+}
+
+.cuadro_valores{ 
+  align-items: baseline;
+  display: flex;  
+}  
+.agregado{
+  text-align: right;
+  margin-left: 5px;
+  font-size: var(--fs-texto)
+
 }

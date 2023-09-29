@@ -117,7 +117,7 @@
 
 /* Esconde un elemento (como la barra de navegacion del header cuando estamos en mobile) */
 .hidden{
-  display: none;
+  display: none !important;
 }
 
 .bold{
