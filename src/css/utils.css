@@ -110,4 +110,12 @@
   object-fit: cover;
 }
 
+/* Registra el maximo ancho de los contenedores para que queden alineados igualmente (carruseles y header) */
+.max-width{
+  max-width: 1200px;
+}
 
+/* Esconde un elemento (como la barra de navegacion del header cuando estamos en mobile) */
+.hidden{
+  display: none;
+}
