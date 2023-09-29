@@ -18,6 +18,13 @@ a, button {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    background-color: inherit;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Remove list styles (bullets/numbers) */
@@ -55,9 +62,11 @@ input, button{
 h1{
   line-height: 110%;
 }
+
 h2, h3, h4, h5, h6{
   line-height: 130%;
 }
+
 p, span, a{
   line-height: 140%;
 }

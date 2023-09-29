@@ -11,19 +11,28 @@
 </head>
 
 <body>
-    <header class="header-encabezado">
-        <div class="header-menu-marca">
-            <div class="header-menu-hamurgresa"><img src="/src/assets/img/hamburguer.svg" alt="Menú">
+    <header>
+        <div class="header-encabezado max-width">
+            <div>
+                <button><img src="/src/assets/img/header/hamburguer.svg" class="icono"></button>
+                <img src="/src/assets/img/header/juegomania.svg" alt="Icono de Logomania">
             </div>
-            <p class="header-nombre">JuegoMania</p>
-        </div>
-        <div class="header-barra-busqueda header-barra-busqueda-hidden">
-            <input type="text" class="header-busqueda-input" placeholder="Buscar juego..." title="Ingrese el juego y presione ENTER">
-        </div>
-        <div class="header-barra-botones">
-            <button class="header-lupa-button" id="header-lupa-button"><img src="/src/assets/img/buscador.svg" alt="Buscador"></button>
-            <button class="header-carrito-button"><img src="/src/assets/img/carrito2.svg" alt="Carrito Compras"></button>
-            <button class="header-login"><img src="/src/assets/img/perfil.svg" alt="Perfil Usuario"></button>
+            <div class="header-barra-busqueda hidden">
+                <input type="text" class="header-busqueda-input" placeholder="Buscar juego...">
+            </div>
+            <div class="header-barra-botones">
+                <button class="icono"><img src="/src/assets/img/header/buscador.svg"></button>
+                <button class="icono"><img src="/src/assets/img/header/carrito.svg"></button>
+                <button class="icono"><img src="/src/assets/img/header/perfil.svg"></button>
+            </div>
+            <div id="desplegable-categorias" class="hidden">
+                <div class="header__categorias">
+                    <p><img src="/src/assets/img/header/desplegable_izquierdo/accion.svg" alt="Icono de los juegos de accion">Acción</p>
+                    <p><img src="/src/assets/img/header/desplegable_izquierdo/terror.svg" alt="Icono de los juegos de terror">Terror</p>
+                    <p><img src="/src/assets/img/header/desplegable_izquierdo/vestir.svg" alt="Icono de los juegos de vestir">Vestir</p>
+                    <p><img src="/src/assets/img/header/desplegable_izquierdo/estrategia.svg" alt="Icono de los juegos de estrategia">Estrategia</p>
+                </div>
+            </div>
         </div>
     </header>
     <div class="container">
@@ -35,7 +44,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -44,7 +53,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -52,7 +61,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -60,7 +69,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -68,7 +77,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -76,7 +85,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -84,7 +93,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -92,7 +101,7 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="card">
@@ -100,11 +109,217 @@
                     <div>
                         <p class="nombre_juego">Bombit it 3</p>
                         <p class="precio">Gratis</p>
-                        <button class="btn"><img src="/src/assets/img/carrito.png" alt="icono carrito">Agregar al carrito</button>
+                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
                     </div>
                 </div>
             </main>
-        </section>  
+        </section>
+        <section class="carruseles">
+            <div class="carrusel__container max-width">
+                <div>
+                    <p class="categorias">Recomendados para ti</p>
+                    <div class="carrusel__buttons">
+                        <button class="deshabilitado"><img src="/src/assets/img/flecha_carrusel.svg" alt="boton izquierdo del carrusel"></button>
+                        <button><img src="/src/assets/img/flecha_carrusel.svg" alt="boton derecho del carrusel"></button>
+                    </div>
+                </div>
+                <div class="carrusel__cards">
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carrusel__container max-width">
+                <div>
+                    <p class="categorias">Acción</p>
+                    <div class="carrusel__buttons">
+                        <button class="deshabilitado"><img src="/src/assets/img/flecha_carrusel.svg" alt="boton izquierdo del carrusel"></button>
+                        <button><img src="/src/assets/img/flecha_carrusel.svg" alt="boton derecho del carrusel"></button>
+                    </div>
+                </div>
+                <div class="carrusel__cards">
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carrusel__container max-width">
+                <div>
+                    <p class="categorias">Terror</p>
+                    <div class="carrusel__buttons">
+                        <button class="deshabilitado"><img src="/src/assets/img/flecha_carrusel.svg" alt="boton izquierdo del carrusel"></button>
+                        <button><img src="/src/assets/img/flecha_carrusel.svg" alt="boton derecho del carrusel"></button>
+                    </div>
+                </div>
+                <div class="carrusel__cards">
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carrusel__container max-width">
+                <div>
+                    <p class="categorias">Vestir</p>
+                    <div class="carrusel__buttons">
+                        <button class="deshabilitado"><img src="/src/assets/img/flecha_carrusel.svg" alt="boton izquierdo del carrusel"></button>
+                        <button><img src="/src/assets/img/flecha_carrusel.svg" alt="boton derecho del carrusel"></button>
+                    </div>
+                </div>
+                <div class="carrusel__cards">
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/src/assets/img/mas-populares/bomb-it-3.jpg" alt="Juegos populares">
+                        <div>
+                            <p class="nombre_juego">Bombit it 3</p>
+                            <p class="precio">Gratis</p>
+                            <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer class="footer-mobile">
@@ -115,10 +330,10 @@
                 <div class="line flex-grow"></div>
             </div>
             <div class="tarjetas">
-                <img src="/src/assets/img/visa.svg" alt="Visa" srcset="">
-                <img src="/src/assets/img/paypal.svg" alt="Paypal" srcset="">
-                <img src="/src/assets/img/mastercard.svg" alt="MasterCard" srcset="">
-                <img src="/src/assets/img/amex.svg" alt="Amex" srcset="">
+                <img src="/src/assets/img/tarjetas_pago/visa.svg" alt="Visa" srcset="">
+                <img src="/src/assets/img/tarjetas_pago/paypal.svg" alt="Paypal" srcset="">
+                <img src="/src/assets/img/tarjetas_pago/mastercard.svg" alt="MasterCard" srcset="">
+                <img src="/src/assets/img/tarjetas_pago/amex.svg" alt="Amex" srcset="">
             </div>
         </div>
         <div class="servicios-mobile">
@@ -145,23 +360,23 @@
             <div class="redes-sociales">
                 <p class="titulo">Redes Sociales</p>
                 <div class="redes">
-                    <img src="/src/assets/img/instagram.svg" alt="Instagram" srcset="">
-                    <img src="/src/assets/img/youtube.svg" alt="YouTube" srcset="">
-                    <img src="/src/assets/img/facebook.svg" alt="Facebook" srcset="">
+                    <img src="/src/assets/img/rrss/instagram.svg" alt="Instagram" srcset="">
+                    <img src="/src/assets/img/rrss/youtube.svg" alt="YouTube" srcset="">
+                    <img src="/src/assets/img/rrss/facebook.svg" alt="Facebook" srcset="">
                 </div>
             </div>
             <div class="validacion">
                 <div class="carousel-slide">
-                    <img src="/src/assets/img/Rockstar-logo.svg" alt="" srcset="">
+                    <img src="/src/assets/img/validacion/Rockstar-logo.svg" alt="" srcset="">
                 </div>
                 <div class="carousel-slide">
-                    <img src="/src/assets/img/blizzard-logo.svg" alt="" srcset="">
+                    <img src="/src/assets/img/validacion/blizzard-logo.svg" alt="" srcset="">
                 </div>
                 <div class="carousel-slide">
-                    <img src="/src/assets/img/Capcom_logo.svg" alt="" srcset="">
+                    <img src="/src/assets/img/validacion/Capcom_logo.svg" alt="" srcset="">
                 </div>
                 <div class="carousel-slide">
-                    <img src="/src/assets/img/Riot_Games_logo.svg" alt="" srcset="">
+                    <img src="/src/assets/img/validacion/Riot_Games_logo.svg" alt="" srcset="">
                 </div>
             </div>
         </div>

@@ -155,15 +155,3 @@ footer img{
     /* height: 100px; */
 }
 
-.carousel-container {
-    display: flex;
-    overflow: hidden;
-    width: 150px;
-    /* Ancho deseado del carrusel */
-    margin: 0 auto;
-}
-
-.carousel-slide {
-    flex: 0 0 100%;
-    transition: transform 0.5s ease-in-out;
-}
