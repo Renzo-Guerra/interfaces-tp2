@@ -2,13 +2,15 @@
   background-color: var(--color-primario-900);
   margin-inline: auto;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   align-items: center;
   padding-block: 1rem;
 }
-.populares .categorias{
-  padding-bottom: 1rem;
+
+.categorias{
   font-size: var(--fs-titulo);
+  color: var(--color-primario-100);
   font-weight: bold;
   text-align: start;
 }
@@ -23,26 +25,26 @@
   max-width: 1000px;
 }
 
-.grilla .card{
+.card{
   color: var(--color-primario-100);
   display: grid;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.grilla .card img{
+.card img{
   width: 100%;
   height: 10rem;
   object-fit: cover;
 }
-.grilla .card div{
+.card div{
   display: flex;
   flex-direction: column;
   gap: .5rem;
   padding: .5rem;
   background-color: var(--color-primario-800);
 }
-.grilla .card button{
+.card button{
   display: flex;
   align-items: center;
   column-gap: .3rem;
@@ -50,7 +52,7 @@
   background-color: transparent;
 }
 
-.grilla .card button img{
+.card button img{
   width: 20px;
   height: 20px;
 }
