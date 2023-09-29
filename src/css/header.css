@@ -3,6 +3,9 @@ header{
     display: flex;
     justify-content: center;
     background-color: var(--color-primario-800);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
 }
 
 .header-encabezado {
@@ -28,3 +31,36 @@ header .icono{
     width: 30px;
     height: 30px;
 }
+
+/* Estilos del desplegable de las categorias */
+#desplegable-categorias{
+    position: fixed;
+    top: 104px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 104px);
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.header__categorias{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: var(--color-primario-900);
+    color: var(--color-primario-100);
+}
+
+.header__categorias p{
+    padding: .5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header__categorias img{
+    width: 30px;
+}
+
