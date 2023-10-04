@@ -31,13 +31,25 @@
   display: grid;
   border-radius: 20px;
   overflow: hidden;
+  opacity: .7;
+  transition: opacity 200ms ease;
+  height: 100%;
+}
+
+.card:hover{
+  opacity: 1;
 }
 
 .card img{
   width: 100%;
   height: 10rem;
   object-fit: cover;
+  transition: transform 200ms ease-in;
 }
+.card img:hover{
+  cursor: pointer;
+}
+
 .card>div{
   display: flex;
   flex-direction: column;
@@ -45,12 +57,37 @@
   padding: .5rem;
   background-color: var(--color-primario-800);
 }
-.card button{
+.card button, .card span{
   display: flex;
   align-items: center;
   column-gap: .3rem;
   align-self: flex-end;
   background-color: transparent;
+  font-size: var(--fs-texto);
+}
+
+span.adquirido{
+  
+}
+.card button{
+  position: relative;
+  overflow-x: hidden;
+  height: fit-content;
+}
+
+.card button::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-radius: 2rem;
+  transform: translateX(-105%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-acento-500);
+  transition: transform 300ms ease-out;
+}
+.card button:hover::after{
+  transform: translateX(0);
 }
 
 .card button img{
@@ -95,9 +132,18 @@
   align-items: baseline;
   display: flex;  
 }  
-.agregado{
-  text-align: right;
-  margin-left: 5px;
-  font-size: var(--fs-texto)
 
+.card_animation{}
+.card_animation:hover{
+  animation: card_animation 200ms cubic-bezier(0.4, 0, 1, 1) forwards;
+  z-index: 1;
+}
+
+@keyframes card_animation{
+  0%{scale: 1;}
+  60%{scale: 1.08;}
+  100%{scale: 1.05;}
+}
+.card_animation:hover{
+  scale: 1.05;
 }
