@@ -19,6 +19,7 @@ a, button {
     text-decoration: none;
     color: inherit;
     background-color: inherit;
+    font-family: inherit;
 }
 
 button{
