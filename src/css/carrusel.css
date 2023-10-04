@@ -46,10 +46,10 @@
   height: 1rem;
 }
 
-/* Clase para desabilitar las flechitas del carrusel */
+/* Clase para desabilitar las flechitas del carrusel 
 .deshabilitado {
   opacity: .4;
-}
+}*/
 
 .carrusel__cards{
   display: flex;
