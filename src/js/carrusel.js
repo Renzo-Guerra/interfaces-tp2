@@ -1,4 +1,8 @@
 
+let btn_izq_recomendado = document.querySelector("#btn-izq-recomendados");
+let btn_der_recomendado = document.querySelector("#btn-der-recomendados");
+
+
 
 // Selecciona todos los elementos de tarjeta y los almacena en la variable "cards".
 const cards = document.querySelectorAll('.card');
