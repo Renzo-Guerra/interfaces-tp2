@@ -1,0 +1,27 @@
+.captcha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario-100);
+    border-radius: 5px;
+    color: var(--color-primario-900);
+    padding: 1rem 4rem;
+}
+
+.captcha img {
+    width: 50px;
+}
+
+.captcha>div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+
+
