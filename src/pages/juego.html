@@ -19,7 +19,37 @@
             </div>
             <div class="header-barra-botones">
                 <button class="icono" id="header-lupa-button"><img src="/src/assets/img/header/buscador.svg"></button>
-                <button class="icono"><img src="/src/assets/img/header/carrito.svg"></button>
+                <div>
+                    <button class="icono" id="btn_carrito"><img src="/src/assets/img/header/carrito.svg"></button>
+                    <div class="contenedor-carrito">
+                        <div>
+                            <div class="carrito__articulo">
+                                <img src="/src/assets/img/accion/Assasins creed odyssey.jpg" alt="">
+                                <div>
+                                    <p>Assasins Creed: Odyssey</p>
+                                    <div>
+                                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                                        <span>$1400</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carrito__articulo">
+                                <img src="/src/assets/img//recomendados para ti/black.jpg" alt="">
+                                <div>
+                                    <p>Black</p>
+                                    <div>
+                                        <button class="btn"><img src="/src/assets/img/card/agregar_al_carrito.svg" alt="icono carrito">Agregar al carrito</button>
+                                        <span>$1400</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Total: $ 3950</p>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
                 <button class="icono" id="header-user-button"><img id="avatar-user" src="/src/assets/img/header/perfil.svg"></button>
             </div>
             <div id="desplegable-categorias" class="hidden">
@@ -129,5 +159,6 @@
     </section>
     <script src="/src/js/header.js"></script>
     <script src="/src/js/juego.js"></script>
+    <script src="/src/js/mostrarCarrito.js"></script>
 </body>
 </html>
