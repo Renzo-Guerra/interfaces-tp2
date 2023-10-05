@@ -1,6 +1,7 @@
 let isLogin = localStorage.getItem('login');
 console.log(isLogin);
 
+let btn_ocultar_barra = document.getElementById("btn-ocultar-barra");
 let buscador = document.querySelector(".header-barra-busqueda");
 let menuDesplegable = document.querySelector("#desplegable-categorias");
 let menuUser = document.querySelector("#header-menu-user");
@@ -41,7 +42,11 @@ btnHamburguesa.addEventListener("click", function () {
 });
 
 btnLupa.addEventListener("click", function () {
-	buscador.classList.toggle("hidden");
-	buscador.style.position = "absolute";
-	buscador.style.zIndex = 1;
+	buscador.classList.remove("hidden");
 });
+
+btn_ocultar_barra.addEventListener("click", function () {
+	buscador.classList.add("hidden");
+});
+
+

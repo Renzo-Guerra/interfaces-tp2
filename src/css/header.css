@@ -4,7 +4,7 @@ header{
     justify-content: center;
     background-color: var(--color-primario-800);
     position: sticky;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
 }
 
@@ -68,12 +68,37 @@ header .icono{
     right: 0;
 }
 
+.header-barra-busqueda{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    gap: 1rem;
+    /* border-radius: 2rem; */
+    padding: 2.6rem 1rem;
+    margin-left: -1rem;
+    overflow: hidden;
+    background-color: var(--color-primario-800);
+}
+.header-barra-busqueda>button img{
+    fill: aqua;
+}
+.header-barra-busqueda input{
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    width: 100%;
+}
+
+
 .header-categorias p,
-.header-menu-usuario a{
+.header-menu-usuario a,
+.header-menu-usuario button{
     padding: .5rem;
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: flex-start;
+    font-size: calc(var(--fs-texto) + 4);
+    font-weight: bold;
 }
 
 .header-categorias img,
