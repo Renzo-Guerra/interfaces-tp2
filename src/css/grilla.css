@@ -67,7 +67,10 @@
 }
 
 span.adquirido{
-  
+  background: linear-gradient(30deg, var(--color-secundario-500)0% 4%, var(--color-acento-500)30% 60%, var(--color-secundario-500)96% 100%);
+  padding: .1rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
 }
 .card button{
   position: relative;
@@ -98,6 +101,12 @@ span.adquirido{
 .card .nombre_juego{
   font-size: var(--fs-texto);
   font-weight: bold;
+  /* Mostrar solo 1 linea parael titulo */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
 }
 
 .card .precio{
