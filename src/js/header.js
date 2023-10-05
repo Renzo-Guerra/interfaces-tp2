@@ -1,5 +1,4 @@
 let isLogin = localStorage.getItem('login');
-console.log(isLogin);
 
 let btn_ocultar_barra = document.getElementById("btn-ocultar-barra");
 let buscador = document.querySelector(".header-barra-busqueda");
@@ -24,7 +23,7 @@ btnCerrarSesionUser.addEventListener('click', function () {
     localStorage.removeItem('login');
     avatarUser.src = "/src/assets/img/header/perfil.svg";
     menuSinLogear.classList.toggle("hidden");
-	menuLogeado.classList.toggle("hidden");
+		menuLogeado.classList.toggle("hidden");
 });
 
 btnUser.addEventListener("click", function () {
@@ -50,3 +49,23 @@ btn_ocultar_barra.addEventListener("click", function () {
 });
 
 
+
+
+function resize(){
+	if(window.screen.width >= 768){
+		btnLupa.classList.add("hidden");
+		buscador.classList.remove("hidden");
+		btn_ocultar_barra.classList.add("hidden");
+		
+		buscador.classList.add("buscador-window");
+	}else{
+		btnLupa.classList.remove("hidden");
+		btn_ocultar_barra.classList.remove("hidden");
+		buscador.classList.remove("buscador-window");
+		buscador.classList.add("hidden");
+	}
+}
+
+resize();
+
+window.addEventListener("resize", resize);

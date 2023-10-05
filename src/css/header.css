@@ -79,9 +79,16 @@ header .icono{
     overflow: hidden;
     background-color: var(--color-primario-800);
 }
-.header-barra-busqueda>button img{
-    fill: aqua;
+
+.buscador-window{
+    position: relative;
+    width: 50%;
 }
+
+.buscador-window input{
+    padding: 1rem;
+}
+
 .header-barra-busqueda input{
     border-radius: 1rem;
     padding-inline: 1rem;
