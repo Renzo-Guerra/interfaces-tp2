@@ -84,7 +84,6 @@ header .icono{
 /* Carrito desplegable */
 .header-barra-botones>div{
     position: relative;
-    background-color: red;
 }
 
 .header-barra-botones .contenedor-carrito{
