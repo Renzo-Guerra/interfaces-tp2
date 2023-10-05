@@ -1,5 +1,32 @@
+let cargado = false;
+let barra = document.querySelector("#barra");
+let porcentaje = document.querySelector("#porcentaje");
+let div_cargando = document.querySelector(".cargando");
+let div_pagina = document.querySelector(".container-pagina");
+
+function cargarPagina() {
+	let progreso = 0;
+	const intervalo = setInterval(function () {
+		if (progreso >= 100) {
+			clearInterval(intervalo);
+			div_cargando.classList.toggle("hidden");
+			div_pagina.classList.toggle("hidden");
+		} else {
+			progreso++;
+			barra.setAttribute("value", progreso);
+		}
+	
+	}, 10);
+
+	cargado = true;
+}
+
+if (!cargado) { 	
+	cargarPagina();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
+
 	const slides = document.querySelectorAll(".carousel-slide");
 
 	let currentIndex = 0;
@@ -21,4 +48,3 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Muestra el primer slide
 	showSlide(currentIndex);
 });
-
