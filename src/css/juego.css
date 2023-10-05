@@ -31,6 +31,7 @@
   flex-direction: column;
   gap: 1rem;
 }
+
 .publicidad__container img{
   object-fit: cover;
   object-position: center;
@@ -118,9 +119,11 @@
   resize: none;
   border-bottom: 2px solid var(--color-primario-100);
 }
+
 .contenedor__comentarios textarea::placeholder{
   color: var(--color-primario-500);
 }
+
 .comentar{
   display: flex;
   flex-direction: column;
@@ -157,4 +160,39 @@
 .comentario img{
   width: 40px;
   height: 40px;
+}
+
+.assets img {
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  text-align: center;
+  height: 100vh;
+}
+
+.popup img#imagenEnPopup {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+}
+
+.popup .cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
 }
