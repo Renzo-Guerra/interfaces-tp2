@@ -3,6 +3,7 @@
 body{
     background-color: #0C0D14;
     width: 100%;
+    min-height: 100vh;
     color: var(--color-primario-100);
 }
 
@@ -29,7 +30,6 @@ body{
     margin: 0 auto;
 }
 .lupa_button{
-    
     border-radius: 20px;
 }
 
@@ -55,23 +55,10 @@ p.nombre{
     font-size: 0px;
 }
 
-/*body {
-    background-color: #0C0D14;
+.cargando {
+    color: var(--color-primario-100);
 }
 
-
-/* .encabezado {
-
-    width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #202126;
-
-
-}
-*/
 .menu_hamurgresa {
     width: 30px;
     background-color: #9BCEDD;
@@ -88,68 +75,7 @@ p.nombre{
     margin: 40px;
     cursor: pointer
 } 
-/*
-.barra_busqueda {
-    display: flex;
-    align-items: center;
-    width: 400px;
-    margin: auto;
-}
 
-.busqueda_input::placeholder {
-    padding-left: 10px;
-    color: #F3F3E6;
-    margin: 0 auto;
-}
-
-.busqueda_input {
-    height: 40px;
-    width: 380px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-color: #5C5D5D;
-    margin: 0 auto;
-    border-style: none;
-}
-
-.lupa_button {
-    height: 42px;
-    width: 45px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: #5C5D5D;
-    margin: 0 auto;
-    border-style: none;
-    cursor: pointer
-}
-
-
-.carrito_button {
-    background-color: #2021265D;
-    margin: 0 auto;
-    width: 102px;
-    height: 40px;
-    color: #9BCEDD;
-    border-style: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 18px;
-
-}
-
-.login {
-    margin-right: 30px;
-    cursor: pointer;
-    background-color: #5C5D5D;
-    border-style: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
-} */
-
-/* Las imagenes de blizzard, riot games, etc */
 footer img{
     width: 100px;
     /* height: 100px; */
