@@ -1,6 +1,8 @@
+
 let popup = document.querySelector("#popup");
 let imagenEnPopup = document.getElementById("imagenEnPopup");
 let cerrarPopup = document.getElementById("cerrarPopup");
+let isMeGusta = null;
 
 function abrir(pos) {
     let imagenPopup = document.querySelector("#img"+ pos);
@@ -11,3 +13,14 @@ function abrir(pos) {
 cerrarPopup.addEventListener("click", () => {
 	popup.style.display = "none";
 });
+
+function megusta(pos) {
+    let img = document.querySelector("#imgmg" + pos);
+    if(isMeGusta == null || !isMeGusta) {
+        img.src = "/src/assets/img/juego/corazon.svg";
+        isMeGusta = true;
+    } else {
+        img.src = "/src/assets/img/iconos/icono_me_gusta.svg";
+        isMeGusta = false;
+    }
+}

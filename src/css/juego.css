@@ -196,3 +196,7 @@
   cursor: pointer;
   color: white;
 }
+
+.me-gusta {
+  fill: aqua;
+}
