@@ -1,3 +1,34 @@
+let cargado = false;
+let barra = document.querySelector("#barra");
+let porcentaje = document.querySelector("#porcentaje");
+let div_cargando = document.querySelector(".cargando");
+let div_pagina = document.querySelector(".container-pagina");
+
+function cargarPagina() {
+	let progreso = 0;
+	const intervalo = setInterval(function () {
+		if (progreso >= 100) {
+			clearInterval(intervalo);
+			div_cargando.classList.toggle("hidden");
+			div_pagina.classList.toggle("hidden");
+		} else {
+			progreso++;
+			barra.setAttribute("value", progreso);
+			porcentaje.textContent = progreso + "%";
+		}
+	}, 50); // 50 * 100 = 5000 ms
+
+	cargado = true;
+}
+
+if (!cargado) { 	
+	cargarPagina();
+}
+
+
+
+
+
 
 let popup = document.querySelector("#popup");
 let imagenEnPopup = document.getElementById("imagenEnPopup");

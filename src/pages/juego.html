@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="/src/css/app.css">
     <title>Cuatro en Linea</title>
 </head>
-<body>
-    <header>
-        <div class="header-encabezado max-width">
+<body> 
+     <div class="cargando">
+            <div>
+                <progress id="barra" max="100" value="0"></progress>
+                <span id="porcentaje"></span>
+            </div>
+            <span>Cargando <div class="contenedor-puntos"><div></div><div></div><div></div></div></span>
+     </div>
+     <div class="container-pagina hidden">
+         <header>
+          <div class="header-encabezado max-width">
             <div>
                 <button><img src="/src/assets/img/header/hamburguer.svg" class="icono" id="header-hamburguesa-button"></button>
                 <a href="/src/pages/index.html"><img src="/src/assets/img/header/juegomania.svg" alt="Icono de Logomania"></a>
@@ -72,91 +80,100 @@
                     <button type="button" id="cerrarSesionUser"><img src="/src/assets/img/header/desplegable_derecho/cerrar-sesion2.svg" alt="Icono para salir">Cerrar sesión</button>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="container__juego__total">
-        <div class="grid__juego max-width">
-            <div class="juego__container">
-                <p><a href="/src/pages/index.html">Inicio</a> / <a href="#">Mas Populares</a> / Conecta la galaxia</p>
-                <div id="juego">
-                    
                 </div>
-            </div>
-            <div class="publicidad__container">
-                <img src="/src/assets/img/header/juegomania.svg" alt="">
-                <img src="/src/assets/img/header/juegomania.svg" alt="">
-            </div>
-            <div class="descripcion">
-                <div>
-                    <div class="controles">
-                        <div>
-                            <span>Jugador 1</span>
-                            <img src="/src/assets/img/flecha_carrusel.svg" alt="Tecla 'A' para ir a la izquierda"> 
-                            <img src="/src/assets/img/flecha_carrusel.svg" alt="Tecla 'S' para soltar la ficha"> 
-                            <img src="/src/assets/img/flecha_carrusel.svg" alt="Tecla 'D' para ir a la derecha"> 
-                        </div>
-                        <div>
-                            <span>Jugador 2</span>
-                            <img src="/src/assets/img/ControlesASD/letraA.svg" alt="Tecla 'A' para soltar la ficha"> 
-                            <img src="/src/assets/img/ControlesASD/letraS.svg" alt="Tecla 'S' para ir a la derecha"> 
-                            <img src="/src/assets/img/ControlesASD/letraD.svg" alt="Tecla 'A' para ir a la izquierda"> 
+            </header>
+            <section class="container__juego__total">
+                <div class="grid__juego max-width">
+                
+                    <div class="juego__container">
+                        <p><a href="/src/pages/index.html">Inicio</a> / <a href="#">Mas Populares</a> / Conecta la galaxia</p>
+                        <div id="juego">
+                            <img src="/src/assets/img/mas-populares/tablero_imagen.png" alt="Elegido">mas poplares</p>  
                         </div>
                     </div>
-                    <button><img src="/src/assets/img/iconos/icono_compartir.svg" alt="boton de compartir"></button>
-                </div>
-                <p>Adéntrate en una galaxia muy, muy lejana y desafía a jugadores de todo el universo en Conecta la galaxia, el juego de 4 en línea con la épica temática de Star Wars. Únete a la lucha entre la Alianza Rebelde y el Imperio Galáctico mientras compites por la supremacía en un emocionante campo de batalla.</p>
-            </div>
-            <div class="popup" id="popup">
-                <img src="" alt="Imagen ampliada" id="imagenEnPopup">
-                <span class="cerrar" id="cerrarPopup">&times;</span>
-            </div>
-            <div class="assets">
-                <img id="img0" onclick="abrir(0)" src="/src/assets/img/header/juegomania.svg" alt="">
-                <img id="img1" onclick="abrir(1)" src="/src/assets/img/header/juegomania.svg" alt="">
-                <img id="img2" onclick="abrir(2)" src="/src/assets/img/header/juegomania.svg" alt="">
-                <img id="img3" onclick="abrir(3)" src="/src/assets/img/header/juegomania.svg" alt="">
-                <img id="img4" onclick="abrir(4)" src="/src/assets/img/header/juegomania.svg" alt="">
-            </div>
-            <div class="contenedor__comentarios">
-                <div class="comentar">
-                    <p><span class="bold">Nombre de usuario</span></p>
-                    <textarea name="" id="" placeholder="Comentario..."></textarea>
-                    <div class="buttons">
-                        <button>Cancelar</button>
-                        <button>Publicar</button>
+                    <div class="publicidad__container">
+                        <img src="/src/assets/img/galeria/publi1.png" alt="">
+                        <img src="/src/assets/img/galeria/publi2.png" alt="">
+                    </div>
+                    <div class="descripcion">
+                        <div>
+                            <div class="controles">
+                                <div>
+                                    <span>Jugador 1</span>
+                                    <img src="/src/assets/img/flecha_carrusel.svg" alt="Tecla 'A' para ir a la izquierda"> 
+                                    <img src="/src/assets/img/flecha_carrusel.svg" alt="Tecla 'S' para soltar la ficha"> 
+                                    <img src="/src/assets/img/flecha_carrusel.svg" alt="Tecla 'D' para ir a la derecha"> 
+                                </div>
+                                <div>
+                                    <span>Jugador 2</span>
+                                    <img src="/src/assets/img/ControlesASD/letraA.svg" alt="Tecla 'A' para soltar la ficha"> 
+                                    <img src="/src/assets/img/ControlesASD/letraS.svg" alt="Tecla 'S' para ir a la derecha"> 
+                                    <img src="/src/assets/img/ControlesASD/letraD.svg" alt="Tecla 'A' para ir a la izquierda"> 
+                                </div>
+                            </div>
+                            <button><img src="/src/assets/img/iconos/icono_compartir.svg" alt="boton de compartir"></button>
+                        </div>
+                        <p>Adéntrate en una galaxia muy, muy lejana y desafía a jugadores de todo el universo en Conecta la galaxia, el juego de 4 en línea con la épica temática de Star Wars. Únete a la lucha entre la Alianza Rebelde y el Imperio Galáctico mientras compites por la supremacía en un emocionante campo de batalla.</p>
+                    </div>
+                    <div class="popup" id="popup">
+                        <img src="" alt="Imagen ampliada" id="imagenEnPopup">
+                        <span class="cerrar" id="cerrarPopup">&times;</span>
+                    </div>
+                    <div class="assets">
+                        <div class="card card_animation">
+                             <img id="img0" onclick="abrir(0)" src="/src/assets/img/galeria/gal.jpg" alt="">
+                        </div>
+                        <div class="card card_animation">
+                            <img id="img1" onclick="abrir(1)" src="/src/assets/img/galeria/gal2.jpg" alt="">
+                        </div>
+                        <div class="card card_animation">   
+                            <img id="img2" onclick="abrir(2)" src="/src/assets/img/galeria/gal3.jpg" alt="">
+                        </div>
+                        <div class="card card_animation">    
+                            <img id="img3" onclick="abrir(3)" src="/src/assets/img/galeria/gal4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="contenedor__comentarios">
+                        <div class="comentar">
+                            <p><span class="bold">Nombre de usuario</span></p>
+                            <textarea name="" id="" placeholder="Comentario..."></textarea>
+                            <div class="buttons">
+                                <button>Cancelar</button>
+                                <button>Publicar</button>
+                            </div>
+                        </div>
+                        <div class="comentario">
+                            <div>
+                                <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 4 horas</span></p>
+                                <button id="btn0" onclick="megusta(0)"><img class="me-gusta" id="imgmg0" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
+                            </div>
+                            <p>¡La emoción de jugar en esta galaxia muy, muy lejana es indescriptible! Cada partida es una aventura. Me encanta cómo han incorporado elementos de Star Wars. ¡No puedo dejar de jugar!</p>
+                        </div>
+                        <div class="comentario">
+                            <div>
+                                <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 2 días</span></p>
+                                <button id="btn1" onclick="megusta(1)"><img class="me-gusta" id="imgmg1" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
+                            </div>
+                            <p>Este juego es adictivo de la mejor manera posible. Solo planeé jugar unas partidas rápidas y aquí estoy, horas después, todavía enganchado. La estrategia de '4 en línea' en el mundo de Star Wars es una combinación ganadora.</p>
+                        </div>
+                        <div class="comentario">
+                            <div>
+                                <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 1 semana</span></p>
+                                <button id="btn2" onclick="megusta(2)"><img class="me-gusta" id="imgmg2" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
+                            </div>
+                            <p>Este juego es adictivo de la mejor manera posible. Solo planeé jugar unas partidas rápidas y aquí estoy, horas después, todavía enganchado. La estrategia de '4 en línea' en el mundo de Star Wars es una combinación ganadora.</p>
+                        </div>
+                        <div class="comentario">
+                            <div>
+                                <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 3 semanas</span></p>
+                                <button id="btn3" onclick="megusta(3)"><img class="me-gusta" id="imgmg3" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
+                            </div>
+                            <p>Si pudiera darle a este juego 10 estrellas, lo haría. Es uno de los mejores juegos de Star Wars que he jugado. Los efectos son impresionantes, y el ambiente es completamente inmersivo.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="comentario">
-                    <div>
-                        <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 4 horas</span></p>
-                        <button id="btn0" onclick="megusta(0)"><img class="me-gusta" id="imgmg0" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
-                    </div>
-                    <p>¡La emoción de jugar en esta galaxia muy, muy lejana es indescriptible! Cada partida es una aventura. Me encanta cómo han incorporado elementos de Star Wars. ¡No puedo dejar de jugar!</p>
-                </div>
-                <div class="comentario">
-                    <div>
-                        <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 2 días</span></p>
-                        <button id="btn1" onclick="megusta(1)"><img class="me-gusta" id="imgmg1" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
-                    </div>
-                    <p>Este juego es adictivo de la mejor manera posible. Solo planeé jugar unas partidas rápidas y aquí estoy, horas después, todavía enganchado. La estrategia de '4 en línea' en el mundo de Star Wars es una combinación ganadora.</p>
-                </div>
-                <div class="comentario">
-                    <div>
-                        <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 1 semana</span></p>
-                        <button id="btn2" onclick="megusta(2)"><img class="me-gusta" id="imgmg2" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
-                    </div>
-                    <p>Este juego es adictivo de la mejor manera posible. Solo planeé jugar unas partidas rápidas y aquí estoy, horas después, todavía enganchado. La estrategia de '4 en línea' en el mundo de Star Wars es una combinación ganadora.</p>
-                </div>
-                <div class="comentario">
-                    <div>
-                        <p><span class="bold">Nombre de usuario</span><span class="italics">Hace 3 semanas</span></p>
-                        <button id="btn3" onclick="megusta(3)"><img class="me-gusta" id="imgmg3" src="/src/assets/img/iconos/icono_me_gusta.svg" alt="Boton de me gusta"></button>
-                    </div>
-                    <p>Si pudiera darle a este juego 10 estrellas, lo haría. Es uno de los mejores juegos de Star Wars que he jugado. Los efectos son impresionantes, y el ambiente es completamente inmersivo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </div>     
     <script src="/src/js/header.js"></script>
     <script src="/src/js/juego.js"></script>
     <script src="/src/js/mostrarCarrito.js"></script>

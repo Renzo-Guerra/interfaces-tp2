@@ -6,6 +6,7 @@
   row-gap: 3rem;
   padding: 4rem 1rem;
   background-color: var(--color-primario-900);
+
 }
 
 .carrusel__container{
@@ -55,8 +56,11 @@
   display: flex;
   gap: 1rem;
   width: fit-content;
+  transition: transform 2s ease;
+  transform: translateX(150px);
 }
 
 .carrusel__cards .card{
   width: 240px;
 }
+
