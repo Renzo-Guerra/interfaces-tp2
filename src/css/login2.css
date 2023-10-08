@@ -1,0 +1,77 @@
+.captcha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primario-100);
+    border-radius: 5px;
+    color: var(--color-primario-900);
+    padding: 1rem 4rem;
+}
+
+.captcha img {
+    width: 50px;
+}
+
+.captcha>div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+.registration-success {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.registration-error {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.checkmark, 
+.notcheckmark {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    font-size: 36px;
+}
+
+.checkmark {
+    border: 2px solid #00cc00;
+    animation: checkmark 0.5s ease-in-out 1;
+}
+
+.notcheckmark {
+    border: 2px solid #f42308;
+    animation: notcheckmark 0.5s ease-in-out 1;
+}
+
+@keyframes checkmark {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+

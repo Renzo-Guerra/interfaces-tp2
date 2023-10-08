@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="/src/css/app.css">
 </head>
 <body>
-    <div class="container-form">
-        <form action="" method="post" class="border-rad">
+    <div class="container-form" id="container-form-login">
+        <form action="" method="post" class="border-rad" id="form-login">
             <h3 class="titular">Inicio de sesión</h3>
             <div class="form-control">
                 <div class="campo">
@@ -33,8 +33,9 @@
                 <img src="/src/assets/img/recaptcha.svg" alt="ReCaptcha" srcset="">
             </div>
             <div class="enviar-form-container">
-                <button type="button" class="btn-form border-rad" id="btn-loginForm">
-                    <a href="index.html">Iniciar sesión</a>
+                <button type="submit" class="btn-form border-rad" id="btn-loginForm" onclick="login(event)">
+                    Iniciar sesión
+                    <!-- <a href="index.html">Iniciar sesión</a> -->
                 </button>
                 <p>¿Aún no tienes cuenta?<a href="./singin.html"> Crear cuenta</a></p>
             </div>
@@ -54,6 +55,17 @@
 
         </form>
     </div>
-    <script src="/src/js/login.js"></script>
+    <div class="registration-success hidden" id="registration-success-login">
+        <div class="checkmark"></div>
+        <p>¡Registro exitoso!</p>
+    </div>
+    <div class="registration-error hidden" id="registration-error-login">
+        <div class="notcheckmark"></div>
+        <p>¡El usuario no ha podido ser autenticado!</p>
+        <button type="button" class="btn-form border-rad">
+            <a href="login2.html">Volver a intentar</a>
+        </button>
+    </div>
+    <script src="/src/js/login2.js"></script>
 </body>
 </html>
