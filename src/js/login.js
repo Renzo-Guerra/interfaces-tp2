@@ -8,6 +8,7 @@ let registration_error_login = document.querySelector("#registration-error-login
 
 function login(event) {
 	event.preventDefault();
+	registration_error_login.classList.remove("animacion_error");
 	const user = "juegosmania";
 	const pass = "123456";
 	let formData = new FormData(form_login);
@@ -16,18 +17,18 @@ function login(event) {
 	let contrasenia = formData.get('contrasenia');
 
 	if(usuario == user && contrasenia == pass) {
-		registracion_success_login.classList.toggle("hidden");
-		container_form_login.classList.toggle("hidden");
+		registracion_success_login.classList.remove("hidden");
+		container_form_login.classList.add("hidden");
 
 		setTimeout(function () {
 			window.location.href = "index.html";
 		}, 3000);
 
 	} else {
-		registration_error_login.classList.toggle("hidden");
-		container_form_login.classList.toggle("hidden");
+		container_form_login.classList.add("hidden");
+		registration_error_login.classList.remove("hidden");
+		registration_error_login.classList.add("animacion_error");
 	}
-	
 }
 
 chk_captcha.addEventListener("click", function () {

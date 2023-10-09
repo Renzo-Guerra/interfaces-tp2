@@ -26,18 +26,49 @@ input[type="checkbox"] {
 .registration-success {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+}
+
+.registration-success img {
+    padding: 1rem;
 }
 
 .registration-error {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 1px #f42308aa;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    color: #f42308;
 }
+
+.animacion_error{
+    animation-name: temblor;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes temblor{
+    0%{transform: translateX(-50%);}
+    25%{transform: translateX(-55%);}
+    50%{transform: translateX(-45%);}
+    75%{transform: translateX(-55%);}
+    100%{transform: translateX(-50%);}
+}
+
 
 .checkmark, 
 .notcheckmark {
@@ -52,11 +83,13 @@ input[type="checkbox"] {
 .checkmark {
     border: 2px solid #00cc00;
     animation: checkmark 0.5s ease-in-out 1;
+    box-shadow: 0 0 200px 3px #00cc00;
 }
 
 .notcheckmark {
     border: 2px solid #f42308;
     animation: notcheckmark 0.5s ease-in-out 1;
+    box-shadow: 0 0 200px 3px #f42308;
 }
 
 @keyframes checkmark {
