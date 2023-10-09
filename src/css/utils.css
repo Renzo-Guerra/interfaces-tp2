@@ -102,6 +102,11 @@
   color: var(--color-primario-100);
 }
 
+.btn-form:disabled{
+  filter: grayscale(1);
+  cursor: auto;
+}
+
 .registro-redes-sociales{
   display: grid;
 }

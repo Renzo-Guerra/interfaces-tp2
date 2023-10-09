@@ -6,6 +6,23 @@ let container_form_login = document.querySelector("#container-form-login");
 let registracion_success_login = document.querySelector("#registration-success-login");
 let registration_error_login = document.querySelector("#registration-error-login");
 
+const input_username = document.getElementById("login-usuario");
+const input_password = document.getElementById("login-contrasenia");
+
+// Validamos que los 3 inputs tengan valor
+input_username.addEventListener("keyup", () => checkInputsHaveData());
+input_password.addEventListener("keyup", () => checkInputsHaveData());
+chk_captcha.addEventListener("click", () => checkInputsHaveData());
+
+// Verifica que los 3 inputs tengan valor
+function checkInputsHaveData(){
+	if(input_username.value && input_password.value && chk_captcha.checked){
+		btnLogin.disabled = false;
+	}else{
+		btnLogin.disabled = "disabled";
+	}
+}
+
 function login(event) {
 	event.preventDefault();
 	registration_error_login.classList.remove("animacion_error");
@@ -30,14 +47,6 @@ function login(event) {
 		registration_error_login.classList.add("animacion_error");
 	}
 }
-
-chk_captcha.addEventListener("click", function () {
-	if (chk_captcha.checked) {
-		btnLogin.removeAttribute("disabled");
-	} else {
-		btnLogin.setAttribute("disabled", "");
-	}
-});
 
 btnLogin.addEventListener("click", function () {
     localStorage.setItem('login', 'true');
