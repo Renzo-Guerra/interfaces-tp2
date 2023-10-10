@@ -1,37 +1,212 @@
 
-let btn_izq_recomendado = document.querySelector("#btn-izq-recomendados");
-let btn_der_recomendado = document.querySelector("#btn-der-recomendados");
+// let contIzqRecomendados = 0;
+// let contIzqAccion = 0;
+// let contIzqTerror = 0;
+// let contIzqVestir = 0;
+// let contDerRecomendados = 0;
+// let contDerAccion = 0;
+// let contDerTerror = 0;
+// let contDerVestir = 0;
+
+// // Función para mover el carrusel a la izquierda
+// function moverIzquierda(carruselId, idBoton, idBotonContrario) {
+//   let boton = document.getElementById(idBoton);
+//   let botonContrario = document.getElementById(idBotonContrario);
+//   let carrusel = document.getElementById(carruselId);
+//   let carruselCards = carrusel.querySelector(".carrusel__cards");
+//   let totalCardsSeccion = carruselCards.querySelectorAll(".card");
+//   let cardWidth = carruselCards.querySelector(".card").offsetWidth;
+//   let totalClicksIzq = parseInt(((totalCardsSeccion.length * cardWidth) / 1100).toFixed()) + 1;
+
+//   if (carruselId == "recomendados") {
+// 		contIzqRecomendados++;
+// 		if (contIzqRecomendados == totalClicksIzq) {
+//       //deshabilito el boton
+//       // botonIzq.disabled = "disabled";
+//       // botonDer.disabled = false;
+// 		}
+//   }
+//   if (carruselId == "accion") {
+// 		contIzqAccion++;
+// 		if (contIzqAccion == totalClicksIzq) {
+// 			//deshabilito el boton
+// 		}
+//   }
+//   if (carruselId == "terror") {
+// 		contIzqTerror++;
+// 		if (contIzqTerror == totalClicksIzq) {
+// 			//deshabilito el boton
+// 		}
+//   }
+//   if (carruselId == "vestir") {
+// 		contIzqVestir++;
+// 		if (contIzqVestir == totalClicksIzq) {
+// 			//deshabilito el boton
+// 		}
+//   }
+
+//   carruselCards.style.transform = "translateX(2%)";
+// }
+
+// // Función para mover el carrusel a la derecha
+// function moverDerecha(carruselId, idBoton, idBotonContrario) {
+	
+//   let boton = document.getElementById(idBoton);
+// 	let botonContrario = document.getElementById(idBotonContrario);
+// 	let carrusel = document.getElementById(carruselId);
+// 	let carruselCards = carrusel.querySelector(".carrusel__cards");
+// 	let totalCardsSeccion = carruselCards.querySelectorAll(".card");
+// 	let cardWidth = carruselCards.querySelector(".card").offsetWidth;
+// 	let totalClicksDer = parseInt(((totalCardsSeccion.length * cardWidth) / 1100).toFixed()) + 1;
+
+// 	if (carruselId == "recomendados") {
+// 		contDerRecomendados++;
+// 		if (contDerRecomendados == totalClicksDer) {
+// 			//deshabilito el boton
+// 			// botonIzq.disabled = "disabled";
+// 			// botonDer.disabled = false;
+// 		}
+// 	}
+// 	if (carruselId == "accion") {
+// 		contDerAccion++;
+// 		if (contDerAccion == totalClicksDer) {
+// 			//deshabilito el boton
+// 		}
+// 	}
+// 	if (carruselId == "terror") {
+// 		contDerTerror++;
+// 		if (contDerTerror == totalClicksDer) {
+// 			//deshabilito el boton
+// 		}
+// 	}
+// 	if (carruselId == "vestir") {
+// 		contDerVestir++;
+// 		if (contDerVestir == totalClicksDer) {
+// 			//deshabilito el boton
+// 		}
+// 	}
+
+// 	carruselCards.style.transform = "translateX(-15%)";
+
+// }
+
+// // Escuchar clics en las flechas izquierdas
+// document.getElementById("btn_izq_recomnedados").addEventListener("click", function () {
+//   moverIzquierda("recomendados", "btn_izq_recomnedados", "btn_der_recomnedados");
+// });
+// document.getElementById("btn_izq_accion").addEventListener("click", function () {
+//   moverIzquierda("accion");
+// });
+// document.getElementById("btn_izq_terror").addEventListener("click", function () {
+//   moverIzquierda("terror");
+// });
+// document.getElementById("btn_izq_vestir").addEventListener("click", function () {
+//   moverIzquierda("vestir");
+// });
+
+// // Escuchar clics en las flechas derechas
+// document.getElementById("btn_der_recomnedados").addEventListener("click", function () {
+//   moverDerecha("recomendados", "btn_der_recomnedados", "btn_izq_recomnedados");
+// });
+// document.getElementById("btn_der_accion").addEventListener("click", function () {
+//   moverDerecha("accion");
+// });
+// document.getElementById("btn_der_terror").addEventListener("click", function () {
+//   moverDerecha("terror");
+// });
+// document.getElementById("btn_der_vestir").addEventListener("click", function () {
+//   moverDerecha("vestir");
+// });
 
 
+let carruselContainer = document.querySelector(".carrusel__container");
+let carruselCards = document.querySelector(".carrusel__cards");
+let btnIzqRecomendados = document.querySelector("#btn_izq_recomnedados");
+let btnDerRecomendados = document.querySelector("#btn_der_recomnedados");
+let divRecomendados = document.querySelector("#recomendadosCard");
+let divAccion = document.querySelector("#accionCard");
+let divTerror = document.querySelector("#terrorCard");
+let divVestir = document.querySelector("#vestirCard");
+let btnIzqAccion = document.querySelector("#btn_izq_accion");
+let btnDerAccion = document.querySelector("#btn_der_accion");
+let btnIzqTerror = document.querySelector("#btn_izq_terror");
+let btnDerTerror = document.querySelector("#btn_der_terror");
+let btnIzqVestir = document.querySelector("#btn_izq_vestir");
+let btnDerVestir = document.querySelector("#btn_der_vestir");
 
-// Selecciona todos los elementos de tarjeta y los almacena en la variable "cards".
-const cards = document.querySelectorAll('.card');
+let posActRecomendados = 0;
+let posActAccion = 0;
+let posActTerror = 0;
+let posActVestir = 0;
 
-// Declara una variable currentIndex para rastrear el índice de la tarjeta actual en el carrusel.
-let currentIndex = 0;
-
-// Función para avanzar a la siguiente tarjeta en el carrusel.
-function nextCard() {
-  currentIndex = (currentIndex + 1) % cards.length;
-  updateCarousel();
-}
-
-// Función para retroceder a la tarjeta anterior en el carrusel.
-function prevCard() {
-  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-  updateCarousel();
-}
-
-// Función para actualizar la posición del carrusel en la pantalla.
-function updateCarousel() {
-  const carrusel = document.querySelector('.carrusel__cards'); // Selecciona el contenedor del carrusel.
-  const cardWidth = cards[0].offsetWidth; // Obtiene el ancho de una tarjeta (suponemos que todas las tarjetas tienen el mismo ancho).
-  const translateX = -currentIndex * cardWidth; // Calcula la posición horizontal del carrusel en píxeles.
-  carrusel.style.transform = `translateX(${translateX}px)`; // Aplica la transformación para mover el carrusel.
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Agrega eventos de clic a los botones de "izquierda" y "derecha".
-  document.querySelector('.izquierda').addEventListener('click', prevCard);
-  document.querySelector('.derecha').addEventListener('click', nextCard);
+// carrusel recomendados
+btnDerRecomendados.addEventListener("click", () => {
+	let maxPosition = divRecomendados.children.length - 3;
+	if (posActRecomendados < maxPosition) {
+		posActRecomendados++;
+		actualizarTransform(divRecomendados, posActRecomendados);
+	}
 });
+
+btnIzqRecomendados.addEventListener("click", () => {
+	if (posActRecomendados > 0) {
+		posActRecomendados--;
+		actualizarTransform(divRecomendados, posActRecomendados);
+	}
+});
+
+// carrusel accion
+btnDerAccion.addEventListener("click", () => {
+	let maxPosition = divAccion.children.length - 3;
+	if (posActAccion < maxPosition) {
+		posActAccion++;
+		actualizarTransform(divAccion, posActAccion);
+	}
+});
+
+btnIzqAccion.addEventListener("click", () => {
+	if (posActAccion > 0) {
+		posActAccion--;
+		actualizarTransform(divAccion, posActAccion);
+	}
+});
+
+// carrusel terror
+btnDerTerror.addEventListener("click", () => {
+	let maxPosition = divTerror.children.length - 3;
+	if (posActTerror < maxPosition) {
+		posActTerror++;
+		actualizarTransform(divTerror, posActTerror);
+	}
+});
+
+btnIzqTerror.addEventListener("click", () => {
+	if (posActTerror > 0) {
+		posActTerror--;
+		actualizarTransform(divTerror, posActTerror);
+	}
+});
+
+
+// carrusel vestir
+btnDerVestir.addEventListener("click", () => {
+	let maxPosition = divVestir.children.length - 3;
+	if (posActVestir < maxPosition) {
+		posActVestir++;
+		actualizarTransform(divVestir, posActVestir);
+	}
+});
+
+btnIzqVestir.addEventListener("click", () => {
+	if (posActVestir > 0) {
+		posActVestir--;
+		actualizarTransform(divVestir, posActVestir);
+	}
+});
+
+// funcion general
+function actualizarTransform(div, pos) {
+	let cardWidth = div.children[0].offsetWidth;
+	let translateX = -pos * cardWidth;
+	div.style.transform = `translateX(${translateX}px)`;
+}

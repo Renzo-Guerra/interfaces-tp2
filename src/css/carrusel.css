@@ -47,20 +47,28 @@
   height: 1rem;
 }
 
-/* Clase para desabilitar las flechitas del carrusel 
-.deshabilitado {
-  opacity: .4;
-}*/
-
 .carrusel__cards{
   display: flex;
   gap: 1rem;
   width: fit-content;
   transition: transform 2s ease;
-  transform: translateX(150px);
+  /* transform: translateX(150px); */
 }
 
 .carrusel__cards .card{
   width: 240px;
 }
+
+
+#btn_izq_recomnedados:hover,
+#btn_der_recomnedados:hover,
+#btn_izq_accion:hover,
+#btn_der_accion:hover,
+#btn_izq_terror:hover,
+#btn_der_terror:hover,
+#btn_izq_vestir:hover,
+#btn_der_vestir:hover {
+  background-color: var(--color-primario-500);
+}
+
 
