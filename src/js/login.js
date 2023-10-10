@@ -6,6 +6,7 @@ let container_form_login = document.querySelector("#container-form-login");
 let registracion_success_login = document.querySelector("#registration-success-login");
 let registration_error_login = document.querySelector("#registration-error-login");
 
+form_login.addEventListener("submit", login);
 const input_username = document.getElementById("login-usuario");
 const input_password = document.getElementById("login-contrasenia");
 
